@@ -68,7 +68,7 @@ public class Main
                 break;
                 case 6:
                 {
-                    System.out.println("Enter the day to filter appointments (e.g., Monday, Wednesday):");
+                    System.out.println("Enter the day to filter appointments (e.g., Monday, Wednesday, Saturday, Sunday):");
                     String filterDay = scn.next();
                     channel.viewAppointmentsByDay(filterDay);
                 }
