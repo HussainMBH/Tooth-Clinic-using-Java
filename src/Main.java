@@ -59,18 +59,17 @@ public class Main
                     channel.printpatients();
                 }
                 break;
-                case 5:
-                {
-                    System.out.println("Enter patient ID to show details");
-                    int patientID = scn.nextInt();
-                    channel.printPatientDetails(patientID);
-                }
+                case 5:{
+                    System.out.println("Enter patient name or Appointment ID to search for an appointment");
+                    String searchKey = scn.next();
+                    channel.searchAppointment(searchKey);
+                    }
                 break;
                 case 6:
                 {
-                    System.out.println("Enter the day to filter appointments (e.g., Monday, Wednesday, Saturday, Sunday):");
-                    String filterDay = scn.next();
-                    channel.viewAppointmentsByDay(filterDay);
+                    System.out.println("Enter the date to filter appointments (e.g., yyyy-MM-dd):");
+                    String filterDate = scn.next();
+                    channel.viewAppointmentsByDate(filterDate);
                 }
                 break;
                 case 7: {
